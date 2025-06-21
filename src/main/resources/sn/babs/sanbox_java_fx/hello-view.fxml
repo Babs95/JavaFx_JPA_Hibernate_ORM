@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sn.babs.sanbox_java_fx.controllers.HelloController">
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="80.0" style="-fx-background-color: #2c3e50; -fx-padding: 15;">
+         <children>
+            <VBox prefWidth="60.0">
+               <children>
+                  <Label style="-fx-background-color: green; -fx-text-fill: white; -fx-font-size: 24px; -fx-font-weight: bold; -fx-background-radius: 30; -fx-min-width: 50; -fx-min-height: 50; -fx-alignment: center;" text="🛒" />
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="SunuEpicerie">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#8c8c8c" strokeType="OUTSIDE" strokeWidth="0.0" text="Système de Gestion d'Epicerie">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </VBox>
+            <Region prefHeight="200.0" prefWidth="200.0" />
+            <VBox alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenue, Admin">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Button mnemonicParsing="false" onAction="#onLogoutButtonClick" style="-fx-background-color: red; -fx-background-radius: 15;" text="Déconnexion" textFill="WHITE" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox prefHeight="400.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <HBox prefHeight="55.0" prefWidth="640.0" style="-fx-background-color: #2c3e50; -fx-padding: 10;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="© 2025 SunuEpicerie - Système de Gestion d'Epicerie" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
