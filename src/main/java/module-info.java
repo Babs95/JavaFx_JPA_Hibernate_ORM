@@ -12,5 +12,6 @@ module sn.babs.sanbox_java_fx {
     exports sn.babs.sanbox_java_fx;
     exports sn.babs.sanbox_java_fx.controllers;
     exports sn.babs.sanbox_java_fx.services;
+    exports sn.babs.sanbox_java_fx.entities;
 
 }
