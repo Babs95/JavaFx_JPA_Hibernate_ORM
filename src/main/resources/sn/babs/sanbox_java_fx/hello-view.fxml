@@ -46,7 +46,90 @@
       </HBox>
    </top>
    <center>
-      <VBox prefHeight="400.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+      <VBox prefHeight="610.0" prefWidth="640.0" spacing="30.0" style="-fx-background-color: #ecf0f1; -fx-padding: 30;">
+         <!-- Statistics Cards -->
+         <HBox spacing="20.0">
+            <children>
+               <!-- Total Produits -->
+               <VBox alignment="CENTER" prefWidth="180.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 2); -fx-padding: 20;">
+                  <children>
+                     <Label style="-fx-font-size: 36px; -fx-text-fill: #3498db;" text="📦" />
+                     <Text fill="#2c3e50" strokeType="OUTSIDE" strokeWidth="0.0" text="1,247">
+                        <font>
+                           <Font name="System Bold" size="24.0" />
+                        </font>
+                     </Text>
+                     <Text fill="#7f8c8d" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Produits" />
+                  </children>
+               </VBox>
+
+               <!-- Ventes Aujourd'hui -->
+               <VBox alignment="CENTER" prefWidth="180.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 2); -fx-padding: 20;">
+                  <children>
+                     <Label style="-fx-font-size: 36px; -fx-text-fill: #27ae60;" text="💰" />
+                     <Text fill="#2c3e50" strokeType="OUTSIDE" strokeWidth="0.0" text="45 000 FCFA">
+                        <font>
+                           <Font name="System Bold" size="24.0" />
+                        </font>
+                     </Text>
+                     <Text fill="#7f8c8d" strokeType="OUTSIDE" strokeWidth="0.0" text="Ventes Aujourd'hui" />
+                  </children>
+               </VBox>
+
+               <!-- Stock Faible -->
+               <VBox alignment="CENTER" prefWidth="180.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 2); -fx-padding: 20;">
+                  <children>
+                     <Label style="-fx-font-size: 36px; -fx-text-fill: #e74c3c;" text="⚠️" />
+                     <Text fill="#2c3e50" strokeType="OUTSIDE" strokeWidth="0.0" text="12">
+                        <font>
+                           <Font name="System Bold" size="24.0" />
+                        </font>
+                     </Text>
+                     <Text fill="#7f8c8d" strokeType="OUTSIDE" strokeWidth="0.0" text="Stock Faible" />
+                  </children>
+               </VBox>
+            </children>
+         </HBox>
+         <VBox spacing="20.0">
+            <children>
+               <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+               <GridPane hgap="20.0" prefHeight="251.0" prefWidth="453.0" vgap="20.0">
+                 <columnConstraints>
+                   <ColumnConstraints hgrow="SOMETIMES" maxWidth="180.0" minWidth="20.0" prefWidth="50.0" />
+                   <ColumnConstraints hgrow="SOMETIMES" maxWidth="180.0" minWidth="20.0" prefWidth="50.0" />
+                 </columnConstraints>
+                 <rowConstraints>
+                   <RowConstraints maxHeight="137.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
+                 </rowConstraints>
+                  <VBox alignment="CENTER" prefHeight="141.0" prefWidth="281.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 2); -fx-cursor: hand;">
+                     <children>
+                        <Label style="-fx-font-size: 48px;" text="📋" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Gestion Produits">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="10.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter, modifier, supprimer" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="250.0" prefWidth="243.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 2); -fx-cursor: hand;" GridPane.columnIndex="1">
+                     <children>
+                        <Label style="-fx-font-size: 48px;" text="🈁" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Gestion Catégories">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="10.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter, modifier, supprimer" />
+                     </children>
+                  </VBox>
+                  <GridPane.margin>
+                     <Insets top="274.0" />
+                  </GridPane.margin>
+               </GridPane>
+            </children>
+         </VBox>
+      </VBox>
    </center>
    <bottom>
       <HBox prefHeight="55.0" prefWidth="640.0" style="-fx-background-color: #2c3e50; -fx-padding: 10;" BorderPane.alignment="CENTER">
