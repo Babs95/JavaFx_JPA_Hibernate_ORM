@@ -5,6 +5,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import sn.babs.sanbox_java_fx.controllers.HelloController;
 import sn.babs.sanbox_java_fx.controllers.LoginController;
 import sn.babs.sanbox_java_fx.services.UserServices;
 import sn.babs.sanbox_java_fx.utils.JPAUtils;
@@ -14,7 +15,8 @@ import java.io.IOException;
 public class HelloApplication extends Application {
     @Override
     public void start (Stage stage) throws IOException {
-        LoginController.showLoginView(stage);
+        //LoginController.showLoginView(stage);
+        HelloController.showHomeView(stage);
     }
 
     @Override

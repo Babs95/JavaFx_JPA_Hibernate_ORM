@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sn.babs.sanbox_java_fx.controllers.CategoryController">
+    <top>
+        <HBox alignment="CENTER_LEFT" prefHeight="80.0" style="-fx-background-color: #2c3e50; -fx-padding: 15;">
+            <children>
+                <!-- Bouton Retour -->
+                <Button fx:id="backButton" onAction="#handleBack" style="-fx-background-color: #3498db; -fx-text-fill: white; -fx-background-radius: 5; -fx-font-weight: bold;" text="← Retour" />
+
+                <!-- Logo/Icon -->
+                <VBox alignment="CENTER" prefWidth="60.0">
+                    <children>
+                        <Label style="-fx-background-color: #27ae60; -fx-text-fill: white; -fx-font-size: 24px; -fx-font-weight: bold; -fx-background-radius: 30; -fx-min-width: 50; -fx-min-height: 50; -fx-alignment: center;" text="🈁" />
+                    </children>
+                    <HBox.margin>
+                        <Insets left="20.0" />
+                    </HBox.margin>
+                </VBox>
+
+                <VBox spacing="5.0">
+                    <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Gestion Catégories">
+                            <font>
+                                <Font name="System Bold" size="28.0" />
+                            </font>
+                        </Text>
+                        <Text fill="#8c8c8c" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter, modifier, supprimer">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Text>
+                    </children>
+                    <padding>
+                        <Insets left="10.0" />
+                    </padding>
+                </VBox>
+            </children>
+        </HBox>
+    </top>
+   <center>
+      <HBox spacing="20.0" style="-fx-padding: 20; -fx-background-color: #ecf0f1;">
+         <children>
+            <VBox prefWidth="350.0" spacing="20.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0" spacing="15.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-padding: 25;">
+                     <children>
+                        <Text fill="#455a79" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter une catégorie">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Text>
+                        <VBox spacing="5.0">
+                           <children>
+                              <Text fill="#254b97" strokeType="OUTSIDE" strokeWidth="0.0" text="Libelle :">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="libelleInput" promptText="Enter le libelle de la catégorie" />
+                           </children>
+                        </VBox>
+                        <HBox spacing="60.0">
+                           <children>
+                              <Button fx:id="addBtn" mnemonicParsing="false" onAction="#handleAdd" prefWidth="120.0" style="-fx-background-color: #27ae60; -fx-text-fill: white; -fx-background-radius: 5; -fx-font-weight: BOLD;" text="Ajouter" />
+                              <Button fx:id="clearFormBtn" mnemonicParsing="false" onAction="#handleClear" prefWidth="120.0" style="-fx-background-color: #95a5a6; -fx-text-fill: white; -fx-background-radius: 5; -fx-font-weight: bold;" text="Effacer" />
+                           </children>
+                        </HBox>
+                     </children></VBox>
+               </children>
+            </VBox>
+            <VBox spacing="15.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox spacing="10.0">
+                     <children>
+                        <TextField fx:id="searchInput" promptText="Rechercher une catégorie..." style="-fx-background-radius: 5; -fx-border-radius: 5; -fx-border-color: #bdc3c7;" />
+                        <Button fx:id="searchBtn" mnemonicParsing="false" onAction="#handleSearch" style="-fx-background-color: #3498db; -fx-text-fill: white; -fx-background-radius: 5;" text="🔍" />
+                     </children>
+                  </HBox>
+                  <TableView fx:id="categoriesTable">
+                    <columns>
+                      <TableColumn fx:id="idColumn" prefWidth="75.0" text="Id" />
+                      <TableColumn fx:id="libelleColumn" prefWidth="75.0" text="Libelle" />
+                        <TableColumn fx:id="actionColumn" prefWidth="75.0" text="Actions" />
+                    </columns>
+                  </TableView>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </center>
+</BorderPane>

@@ -7,6 +7,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import sn.babs.sanbox_java_fx.HelloApplication;
 
@@ -31,5 +32,13 @@ public class HelloController {
 
         //Changer de scéne
         LoginController.showLoginView(stage);
+    }
+
+    @FXML
+    public void onCategoryCardClick(MouseEvent event) throws IOException {
+        // Obtenir la scène actuelle
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        CategoryController.showCategoryView(stage);
     }
 }
