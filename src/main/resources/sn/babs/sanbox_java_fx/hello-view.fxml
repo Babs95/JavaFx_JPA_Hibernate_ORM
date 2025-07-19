@@ -102,7 +102,7 @@
                  <rowConstraints>
                    <RowConstraints maxHeight="137.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
                  </rowConstraints>
-                  <VBox fx:id="productManagmentVIew" alignment="CENTER" prefHeight="141.0" prefWidth="281.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 2); -fx-cursor: hand;">
+                  <VBox fx:id="productManagmentVIew" alignment="CENTER" onMouseClicked="#onProductCardClick" prefHeight="141.0" prefWidth="281.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 2); -fx-cursor: hand;">
                      <children>
                         <Label style="-fx-font-size: 48px;" text="📋" />
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Gestion Produits">
@@ -113,9 +113,9 @@
                         <Text layoutX="10.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter, modifier, supprimer" />
                      </children>
                   </VBox>
-                  <VBox alignment="CENTER" prefHeight="250.0" prefWidth="243.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 2); -fx-cursor: hand;" GridPane.columnIndex="1">
+                  <VBox alignment="CENTER" onMouseClicked="#onCategoryCardClick" prefHeight="250.0" prefWidth="243.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 2); -fx-cursor: hand;" GridPane.columnIndex="1">
                      <children>
-                        <Label onMouseClicked="#onCategoryCardClick" style="-fx-font-size: 48px;" text="🈁" />
+                        <Label style="-fx-font-size: 48px;" text="🈁" />
                         <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Gestion Catégories">
                            <font>
                               <Font name="System Bold" size="14.0" />

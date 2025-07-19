@@ -41,4 +41,12 @@ public class HelloController {
 
         CategoryController.showCategoryView(stage);
     }
+
+    @FXML
+    public void onProductCardClick(MouseEvent event) throws IOException {
+        // Obtenir la scène actuelle
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+        ProductManagmentController.showProductView(stage);
+    }
 }

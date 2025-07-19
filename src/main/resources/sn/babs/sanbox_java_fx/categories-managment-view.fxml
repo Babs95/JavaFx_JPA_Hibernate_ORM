@@ -83,9 +83,9 @@
                   </HBox>
                   <TableView fx:id="categoriesTable">
                     <columns>
-                      <TableColumn fx:id="idColumn" prefWidth="75.0" text="Id" />
-                      <TableColumn fx:id="libelleColumn" prefWidth="75.0" text="Libelle" />
-                        <TableColumn fx:id="actionColumn" prefWidth="75.0" text="Actions" />
+                      <TableColumn fx:id="idColumn" text="Id" />
+                      <TableColumn fx:id="libelleColumn" prefWidth="150.0" text="Libelle" />
+                        <TableColumn fx:id="actionColumn" prefWidth="120.0" text="Actions" />
                     </columns>
                   </TableView>
                </children>
